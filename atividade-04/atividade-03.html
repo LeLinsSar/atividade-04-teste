@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade-03</title>
+</head>
+<body>
+
+  
+     <script>
+        
+        let hr1 = parseInt(prompt("Que horas começou? "))
+        let min1 = parseInt(prompt("quantos minutos? "))
+        let hr2 = parseInt(prompt("Que horas terminou? "))
+        let min2 = parseInt(prompt("qauntos minutos? "))
+          
+        
+        function tempo(hr1, min1, hr2, min2){
+         
+         let inicio = min1 - min2 
+
+         if( hr1 > hr2){
+          inicio = ((hr1 + hr2)*60) + inicio
+         
+          
+          console.log(`O jogo demorou ${inicio} minutos.`)
+         }else {
+           inicio = (((hr1-hr2)*60) + inicio)*-1
+           
+           console.log(`O jogo demorou ${inicio} minutos.`)
+         }
+          
+            
+        } 
+        
+        tempo(hr1, min1, hr2, min2)
+        // usei o let para declarar as variaveis, usei a função para começar, usei if e else para calcular e o console para o tempo do jogo 
+
+     </script> 
+
+</body>
+</html>
